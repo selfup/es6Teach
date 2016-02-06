@@ -8,3 +8,8 @@ $(document).ready( () => {
 const wow = () => {
   return console.log('wow')
 }
+
+$('#welcome').on('click', function (e) {
+  console.log(this)
+  console.log(e.toElement.textContent)
+})
